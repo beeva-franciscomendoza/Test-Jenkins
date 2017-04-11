@@ -67,3 +67,5 @@ def jobs_info_of_master(server, username, password):
     return jobs_master
 
 testResults = jobs_info_of_master(sys.argv[1], sys.argv[2] , sys.argv[3])
+
+# Selected one function for testResults
