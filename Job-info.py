@@ -33,6 +33,7 @@ def jobs_info_of_master(server, username, password):
     server = add_bar_url(server)
     server = url_api_json(server)
     request = urllib2.Request(server,None, headers)
+    jobs_master = None
 
     try:
         response = urllib2.urlopen(request)
