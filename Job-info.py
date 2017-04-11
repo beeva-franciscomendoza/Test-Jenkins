@@ -2,6 +2,7 @@
 import urllib2, base64
 import json
 import os
+import sys
 from termcolor import colored, cprint
 
 def url_api_json(simple_url):
@@ -65,4 +66,4 @@ def jobs_info_of_master(server, username, password):
         print "Jenkins returned an error in get the jobs of jenkins master (info): " + str(e)
     return jobs_master
 
-testResults = jobs_info_of_master(server, username , password)
+testResults = jobs_info_of_master(sys.argv[1], sys.argv[2] , sys.argv[3])
